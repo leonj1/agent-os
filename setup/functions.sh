@@ -177,7 +177,7 @@ install_from_github() {
         echo "📥 Downloading command files to $target_dir/commands/"
         mkdir -p "$target_dir/commands"
 
-        for cmd in plan-product create-spec create-tasks execute-tasks analyze-product; do
+        for cmd in plan-product create-spec create-tasks execute-tasks analyze-product import-ai-prompts; do
             download_file "${BASE_URL}/commands/${cmd}.md" \
                 "$target_dir/commands/${cmd}.md" \
                 "$overwrite_std" \
